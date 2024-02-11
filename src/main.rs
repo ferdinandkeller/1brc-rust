@@ -27,6 +27,8 @@ fn main() {
     // We create a buffer reader.
     // This is a performance optimization, as it allows us to read the file in chunks,
     // instead of doing a syscall for each line, without compromising on code readability.
+    // Technically this isn't needed, because our file is on `/dev/shm`, but I let it here
+    // to make sure the code still works properly if the file is on a regular disk.
     let mut reader = std::io::BufReader::with_capacity(FILE_BUFF_SIZE, file_handle);
 
     // create our data holding structures
