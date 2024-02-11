@@ -1,0 +1,9 @@
+[package]
+name = "onebrc-rust"
+authors = ["Ferdinand Keller <ferdinand.keller@proton.me>"]
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+bumpalo = "3.14.0"
