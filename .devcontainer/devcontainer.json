@@ -1,0 +1,19 @@
+{
+	"name": "Ubuntu",
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"features": {
+		"ghcr.io/devcontainers/features/rust:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"Swellaby.rust-pack",
+				"eamodio.gitlens"
+			]
+		}
+	},
+	// set shm size to 5GiB when creating the container
+	"runArgs": [
+		"--shm-size=5g"
+	]
+}
