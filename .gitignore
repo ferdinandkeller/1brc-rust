@@ -43,3 +43,6 @@ Cargo.lock
 
 # ignore the 1brc sub-repo
 1brc/
+
+# ignore the produced summary
+summary.txt
